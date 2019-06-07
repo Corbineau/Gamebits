@@ -1,0 +1,24 @@
+{
+  "name": "gamebits",
+  "version": "1.0.0",
+  "description": "samples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Corbineau/Gamebits.git"
+  },
+  "author": "Rabbit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Corbineau/Gamebits/issues"
+  },
+  "homepage": "https://github.com/Corbineau/Gamebits#readme",
+  "dependencies": {
+    "ensy": "^1.4.0",
+    "express": "^4.17.1",
+    "react-native-game-engine": "^0.11.5"
+  }
+}
