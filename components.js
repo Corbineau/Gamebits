@@ -3,29 +3,32 @@ import EntityManager from 'ensy';
 let manager = new EntityManager();
 
 // Create a component and add it to the manager.
-const PlayerComponent = {
-    name: 'Player',
-    description: "The player's state",
+const WizardComponent = {
+    name: 'Wizard',
+    description: "The Wizard's state",
     state: {
         life: 100,
         strength: 18,
         charisma: 3,
+    },
+    spellbook: {
+
     }
 };
-manager.addComponent(PlayerComponent.name, PlayerComponent);
+manager.addComponent(WizardComponent.name, WizardComponent);
 console.log(manager);
 
 // Create a new entity.
-var playerId = manager.createEntity(['Player']);
+var WizardId = manager.createEntity(['Wizard']);
 
-// Update the player's state:
-var playerData = manager.getComponentDataForEntity('Player', playerId);
-playerData.life = 80;
+// Update the Wizard's state:
+var WizardData = manager.getComponentDataForEntity('Wizard', WizardId);
+WizardData.life = 80;
 
 // Which is equivalent to:
-manager.updateComponentDataForEntity('Player', playerId, {
+manager.updateComponentDataForEntity('Wizard', WizardId, {
     life: 80,
 });
 
-console.log(playerData);
+console.log(WizardData);
 // { life: 80, strength: 18, charisma: 3 }
