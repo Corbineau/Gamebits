@@ -19,7 +19,7 @@
   "dependencies": {
     "braces": "^3.0.2",
     "ensy": "^1.4.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "react": "^16.8.6",
     "react-native": "^0.59.9",
     "react-native-game-engine": "^0.11.5"
